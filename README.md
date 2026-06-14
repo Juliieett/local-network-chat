@@ -40,16 +40,16 @@ listening when the broadcast goes out).
 
 ### Terminal 1 — Recipient
 ```bash
-python recipient.py alice
+python recipient.py julie
 ```
-`alice` is this peer's nickname. It now waits for a broadcast addressed to
-`alice`.
+`julie` is this peer's nickname. It now waits for a broadcast addressed to
+`julie`.
 
 ### Terminal 2 — Initiator
 ```bash
-python initiator.py alice
+python initiator.py julie
 ```
-This broadcasts a request for the partner nicknamed `alice`, then listens for
+This broadcasts a request for the partner nicknamed `julie`, then listens for
 the incoming TCP connection.
 
 Optional flags for the Initiator:
@@ -60,7 +60,7 @@ Optional flags for the Initiator:
 | `--deadline SECS` | `30` | How many seconds to wait for a response |
 
 ```bash
-python initiator.py alice --port 56000 --deadline 20
+python initiator.py julie --port 56000 --deadline 20
 ```
 
 ### Chatting
